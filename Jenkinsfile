@@ -14,6 +14,8 @@ pipeline{
     }
   }
   post {
-    sh './helper down'
+    always {
+      sh './helper down'
+    }
   }
 }
