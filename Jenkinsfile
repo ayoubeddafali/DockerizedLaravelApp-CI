@@ -4,7 +4,7 @@ pipeline{
   stages {
     stage("Starting"){
       steps{
-        sh 'echo Starting'
+        sh './helper up -d'
       }
     }
     stage("Unit Tests"){
