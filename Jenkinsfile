@@ -13,4 +13,7 @@ pipeline{
       }
     }
   }
+  post {
+    sh './helper down'
+  }
 }
